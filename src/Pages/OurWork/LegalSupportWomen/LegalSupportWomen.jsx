@@ -7,7 +7,7 @@ import ApplicationForm from "../../../components/FormModal/ApplicationForm.jsx";
 import DonationFormUnderPrivileged from "../../../components/DonationForm/DonationForm.jsx";
 
 // Import Images
-import bannerImg from "../../../assets/women-banner.jpg"; // replace with actual image
+import bannerImg from "../../../assets/Women-banner.jpg"; 
 import gallery1 from "../../../assets/Comfortlife-Wefare.jpeg";
 
 const UnderPrivilegedChildren = () => {
