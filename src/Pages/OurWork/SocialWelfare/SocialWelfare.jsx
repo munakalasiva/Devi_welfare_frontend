@@ -4,7 +4,7 @@ import FormModal from "../../../components/FormModal/FormModal.jsx";
 import ApplicationForm from "../../../components/FormModal/ApplicationForm.jsx";
 import DonationForm from "../../../components/DonationForm/DonationForm.jsx";
 
-import bannerImg from "../../../assets/Socialwelfare-banner.jpg"; // replace with actual image
+import bannerImg from "../../../assets/SocialWelfare-banner.jpg"; // replace with actual image
 import gallery1 from "../../../assets/casestudy1.jpeg"; // replace with actual image
 
 const SocialWelfare = () => {
