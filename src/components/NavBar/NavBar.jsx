@@ -1,7 +1,7 @@
 // src/components/Navbar/Navbar.jsx
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Navbar.css";
+import "./NavBar.css";
 import { FaFacebookF, FaTwitter, FaInstagram, FaTumblr } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import Logo from "../../assets/DLWA-Logo.png";
