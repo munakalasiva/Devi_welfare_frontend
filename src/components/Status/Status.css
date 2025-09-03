@@ -1,0 +1,32 @@
+.stats-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* keeps image fixed while scrolling */
+  padding: 100px 0;
+  color: white;
+  z-index: 1;
+}
+
+/* Overlay only for background */
+.stats-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: -1; /* stays behind content */
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}

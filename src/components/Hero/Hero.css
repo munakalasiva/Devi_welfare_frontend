@@ -1,0 +1,98 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-slide {
+  height: 90vh;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Custom Arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background: yellow;
+  color: black;
+}
+
+.custom-arrow.prev {
+  left: 20px;
+}
+
+.custom-arrow.next {
+  right: 20px;
+}
+
+/* Custom Dots */
+.custom-dots {
+  bottom: 20px;
+}
+
+.custom-dots li button:before {
+  font-size: 12px;
+  color: black; /* default */
+  opacity: 0.8;
+}
+
+.custom-dots li.slick-active button:before {
+  color: yellow; /* active dot */
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 60vh;
+  }
+
+  .hero-img {
+    height: 60vh;
+  }
+
+  .custom-arrow {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .hero-slide {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-slider {
+    height: 40vh;
+  }
+
+  .hero-img {
+    height: 30vh;
+  }
+
+  /* Custom Arrows */
+  .custom-arrow {
+    font-size: 10px;
+    padding: 4px;
+  }
+
+  .hero-slide {
+    height: 40vh;
+  }
+}

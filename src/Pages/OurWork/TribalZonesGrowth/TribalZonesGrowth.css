@@ -1,0 +1,272 @@
+
+
+.tribal-banner {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* full viewport height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tribal-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.356); /* optional dim overlay */
+}
+
+
+.hero-content h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+.tribal-col {
+  text-align: justify;
+}
+
+.tribal-col h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.tribal-col p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.impact-quote {
+  font-size: 1.2rem;
+  color: #007bff;
+  text-align: center;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+.tribal-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tribal-buttons .btn {
+  min-width: 150px;
+}
+
+
+.tribal-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Common button styles */
+.tribal-btn {
+  padding: 0.65rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Primary button */
+.primary-btn {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: linear-gradient(90deg, #5a0fc0, #1f5cd8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Outline button */
+.outline-btn {
+  background: transparent;
+  border: 2px solid #2575fc;
+  color: #2575fc;
+}
+
+.outline-btn:hover {
+  background: #2575fc;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.tribal-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;        /* vertically centers image with text */
+}
+
+.tribal-image {
+  width: 100%;                /* fills column width */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tribal-image:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.eligibility-section {
+  padding: 4rem 0;
+  background-color: #f8f8f8; /* light background */
+}
+
+.eligibility-section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.eligibility-card {
+  padding: 2rem 1.5rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.eligibility-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.eligibility-card li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.eligibility-card li::before {
+  content: "";
+  margin-right: 0.5rem;
+  color: #28a745; /* green check mark */
+}
+
+.eligibility-card:hover {
+  background-color: #fffbfbf6;
+
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .eligibility-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .eligibility-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .eligibility-card li {
+    font-size: 1rem;
+  }
+}
+
+.benefits-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+}
+
+.benefits-section h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.benefits-section .card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem 1rem;
+}
+
+.benefits-section .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.benefits-section .card h5 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-section .card ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+.benefits-section .card ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.benefits-section .card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .benefits-section h2 {
+    font-size: 2rem;
+  }
+
+  .benefits-section .card h5 {
+    font-size: 1.2rem;
+  }
+
+  .benefits-section .card ul li {
+    font-size: 0.95rem;
+  }
+}

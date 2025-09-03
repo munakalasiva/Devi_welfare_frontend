@@ -1,0 +1,76 @@
+/* Modal container */
+.custom-modal .modal-content {
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #f8faff);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Smooth opening */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.custom-modal-header {
+  background: #e77103;
+  color: #fff;
+  border-bottom: none;
+  padding: 18px 24px;
+}
+
+.custom-modal-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Body */
+.custom-modal-body {
+  padding: 24px;
+  background: #f9fbfff4;
+}
+
+/* Footer */
+.custom-modal-footer {
+  border-top: none;
+  padding: 18px 24px;
+  background: #f1f4ff;
+}
+
+/* Buttons */
+.custom-btn {
+  border-radius: 30px;
+  padding: 8px 22px;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.cancel-btn {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.cancel-btn:hover {
+  background: #e9ecef;
+  color: #000;
+}
+
+.submit-btn {
+  background: #e77103;
+  border: none;
+}
+
+.submit-btn:hover {
+  background: #e77103e8;
+}

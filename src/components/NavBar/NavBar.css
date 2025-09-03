@@ -1,0 +1,170 @@
+/* Top Bar */
+.top-bar {
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.top-bar a:hover {
+  color: #f1b300;
+}
+
+/* Main Navbar */
+.main-navbar {
+  background: #414141;
+  min-height: 4.9rem;
+}
+
+.logo-card {
+  background: #fff;
+  padding: 6px;
+  border-radius: 0 0 12px 12px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  position: absolute; /* floats outside normal flow */
+  top: 0px; /* move upward above navbar */
+  left: 20px; /* adjust horizontal position */
+  z-index: 10; /* ensure it's above navbar/hero */
+}
+
+.logo-card img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  transition: color 0.3s;
+  font-size: 20px;
+}
+
+.logo-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.custom-toggler {
+  border-color: #fff; /* white border */
+}
+
+.donate-btn {
+  background: #f1b300;
+  color: #000;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.donate-btn:hover {
+  background: rgb(6 95 70);
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between icons */
+}
+
+.social-icon {
+  font-size: 20px; /* bigger size */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* zoom effect */
+  color: #555; /* subtle hover color */
+}
+
+.logo-img {
+  height: 80px; /* adjust based on your navbar height */
+  width: auto; /* keep proportions */
+  object-fit: contain;
+}
+
+/* Dropdown styling */
+.custom-dropdown {
+  border-radius: 8px;
+  padding: 8px 0;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+  min-width: 220px;
+}
+
+/* Dropdown items */
+.custom-dropdown .dropdown-item {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 18px;
+  transition: all 0.2s ease-in-out;
+  color: #333;
+}
+
+/* Hover effect */
+.custom-dropdown .dropdown-item:hover {
+  background-color: #dddddd; /* blue highlight */
+  /* color: #fff !important; */
+  /* transform: scale(1.03); slight increase */
+}
+
+/* Active state (when on that page) */
+.custom-dropdown .dropdown-item.active {
+  background-color: #f1b300 !important; /* blue highlight */
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+@media (max-width: 1200px) {
+  .logo-card {
+    width: 80px;
+    height: 80px;
+    left: 10px; /* adjust for smaller screens */
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 16px; /* smaller font size for mobile */
+  }
+
+  .donate-btn {
+    padding: 8px 14px; /* smaller padding for mobile */
+    font-size: 14px; /* smaller font size for mobile */
+  }
+}
+
+@media (max-width: 500px) {
+  .social-icon {
+    display: none;
+  }
+  .logo-card img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .logo-img {
+    height: 40px; /* adjust based on your navbar height */
+    width: auto; /* keep proportions */
+    object-fit: contain;
+  }
+  .navbar-toggler-icon {
+    color: white;
+  }
+}

@@ -1,0 +1,106 @@
+.event-row {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+.event-row .col-md-6 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.event-img-card {
+  margin-bottom: 1rem;
+}
+
+.event-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.event-date {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.event-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  text-align: justify;
+}
+.event-img-card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-img-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* 🔹 Big image style */
+.big-img img {
+  width: 100%;
+  height: 420px; /* increase height for breathing space */
+  object-fit: cover; /* keep aspect ratio & fill */
+  object-position: center 20%; /* shift focus slightly down */
+  border-radius: 12px; /* make edges softer */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* elegant shadow */
+}
+
+/* 🔹 Small image style */
+.small-img img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center; /* keep small images centered */
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Banner Styling */ /* Banner Background */
+.event-banner {
+  position: relative;
+  background: url("../../assets/event-banner.jpg") center/cover no-repeat; /* replace with your banner image */
+  height: 400px; /* adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Dark Overlay */
+.event-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Banner Text */
+.banner-title {
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.banner-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  z-index: 2;
+}

@@ -1,0 +1,205 @@
+.aboutus-section {
+  background: url("../../assets/about-bg.jpg");
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+.aboutus-banner {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutus-banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.159);
+}
+
+.banner-title {
+  position: relative;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+.about-text1 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.about-collage {
+  position: relative;
+  width: 100%;
+  height: 400px; /* adjust height as needed */
+}
+
+.collage-img {
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.collage-img:hover {
+  transform: scale(1.05);
+}
+
+/* First image (top-right, larger) */
+.collage-img-1 {
+  top: 37%;
+  right: 6%;
+  width: 60%;
+  height: 75%;
+}
+
+/* Second image (bottom-left, medium) */
+
+/* Third image (floating small, middle) */
+.collage-img-3 {
+  top: -25%;
+  left: -10%;
+  width: 55%;
+  height: 80%;
+  margin: 20px;
+}
+
+.about-list {
+  list-style: none; /* remove default bullets */
+  padding-left: 0;
+  padding-top: 10px; /* reset left padding */
+  text-align: justify;
+}
+
+.about-list li {
+  position: relative; /* needed for ::before positioning */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 10px;
+  padding-left: 20px; /* space for the custom icon */
+}
+
+.about-list li::before {
+  content: "➤"; /* custom arrow */
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ff6b35;
+  font-weight: bold;
+}
+
+.about-list li strong {
+  color: #ff6b35;
+  font-size: 18px;
+}
+.about-text1 strong {
+  color: #ff6b35;
+  font-size: 18px;
+}
+
+@media (max-width: 778px) {
+  /* Optional: different heights for visual variety */
+  .collage-img-1 {
+    height: 220px;
+    top: 40%;
+    right: -10%;
+  }
+  .collage-img-2 {
+    height: 180px;
+    top: -10%;
+    right: 20%;
+  }
+  .collage-img-3 {
+    height: 200px;
+    top: 40%;
+    left: -10%;
+  }
+}
+
+@media (max-width: 630px) {
+  /* .about-title {
+    font-size: 2rem;
+  }
+  .banner-title {
+    font-size: 2.5rem;
+  }
+  .about-text1, .about-text {
+    font-size: 0.95rem;
+  } */
+
+  /* Optional: different heights for visual variety */
+
+  .about-collage {
+    position: relative;
+    width: 100%;
+    height: 300px; /* adjust height as needed */
+  }
+
+  .collage-img-1 {
+    height: 220px;
+    top: 11%;
+    right: 16%;
+    width: 150px;
+    height: 150px;
+  }
+
+  .collage-img-3 {
+    width: 150px;
+    height: 150px;
+    top: 37%;
+    left: 8%;
+  }
+
+  .about-text1 {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #333;
+    text-transform: capitalize;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+  }
+  .aboutus-banner {
+    position: relative;
+    height: 80px;
+    background-size: 100%;
+    background-position: center;
+  }
+
+  .aboutus-banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.159);
+  }
+}
